@@ -48,8 +48,6 @@ public class GuessGame{
 				}
 			}
 
-			//System.out.println("p1.number = " + p1.number + " | " + " b1 - " + b1[p1.number]);
-
 			while(true){
 				p2.guess();
 				if (b2[p2.number]) {
@@ -60,8 +58,6 @@ public class GuessGame{
 				}
 			}
 
-			//System.out.println("p1.number = " + p1.number + " | " + " b1 - " + b1[p1.number]);
-
 			while(true){
 				p3.guess();
 				if (b3[p3.number]) {
@@ -71,8 +67,6 @@ public class GuessGame{
 					break;
 				}
 			}
-
-			//System.out.println("p1.number = " + p1.number + " | " + " b1 - " + b1[p1.number]);
 			
 			if (guessp1 == targetNumber){
 				p1isRight = true;
@@ -85,10 +79,13 @@ public class GuessGame{
 			}
 
 			if (p1isRight || p2isRight || p3isRight){
+				System.out.println();
 				System.out.println("We have a Winner!");
+				System.out.println()''
 				System.out.println("First player say " + p1isRight);
 				System.out.println("Second player say " + p2isRight);
 				System.out.println("Third player say " + p3isRight);
+				System.out.println();
 				System.out.println("Game over");
 				break;
 			} else {
